@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Javin Ahuja — Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .pdf { width: 100%; height: 100%; border: 0; }
+    .fallback {
+      height: 100%; display: flex; align-items: center; justify-content: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+    .btn {
+      padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- If the browser supports inline PDFs, this will display it full-screen -->
+  <object class="pdf" data="Javin_Ahuja_Resume.pdf#zoom=page-fit" type="application/pdf">
+    <!-- Fallback for browsers that don't show PDFs inline -->
+    <div class="fallback">
+      <a class="btn" href="Javin_Ahuja_Resume.pdf" target="_blank" rel="noopener">Open / Download Resume (PDF)</a>
+    </div>
+  </object>
+</body>
+</html>
