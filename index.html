@@ -11,17 +11,15 @@
       height: 100%; display: flex; align-items: center; justify-content: center;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
-    .btn {
-      padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none;
-    }
+    .btn { padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none; }
   </style>
 </head>
 <body>
-  <!-- If the browser supports inline PDFs, this will display it full-screen -->
-  <object class="pdf" data="Javin_Ahuja_Resume.pdf#zoom=page-fit" type="application/pdf">
-    <!-- Fallback for browsers that don't show PDFs inline -->
+  <!-- Full-page inline viewer -->
+  <object class="pdf" data="resume.pdf#zoom=page-fit" type="application/pdf">
+    <!-- Fallback if inline PDFs aren’t supported -->
     <div class="fallback">
-      <a class="btn" href="Javin_Ahuja_Resume.pdf" target="_blank" rel="noopener">Open / Download Resume (PDF)</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Open / Download Resume (PDF)</a>
     </div>
   </object>
 </body>
